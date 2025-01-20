@@ -111,8 +111,8 @@ To run the project, follow these steps:
    pip install -r requirements.txt
    ```
 
-3. **Add updated NAT DATABASE.xlsx file**
-   Go to data/target and upload the NAT DATABASE.xlsx file. Please make sure it's named in the same way.
+3. **Add updated NAT DATABASE.xlsx file (N/A; Please use other file)**
+   Go to data/target and upload the NAT DATABASE.xlsx file (N/A). Please make sure it's named in the same way.
 
 3. **Set Up API Keys:**
    Add your API keys to the `api-keys.json` file.
@@ -268,7 +268,7 @@ The `main` method initializes the base classifiers, trains them on the training 
 
 ## Next Steps
 Please consider approaching the following next steps to further improve the model:
-1. **Automatize the target data ingestion**:  the current project retrieves data from a file provided by XXX called "NAT DATABASE.xlsx" inside the data/target directory. Therefore, to predict/train an updated dataset, a manual replacement of the dataset is needed.
+1. **Automatize the target data ingestion**:  the current project retrieves data from a file provided by XXX called "NAT DATABASE.xlsx" (N/A) inside the data/target directory. Therefore, to predict/train an updated dataset, a manual replacement of the dataset is needed.
 2. **Activate AlphaVantage with premium API**: AlphaVantage is a leader in the market sentiment space. It provides useful data about general sentiment of companies (Sell, Hold, Buy), and news sentiment.
 2. **Daily frequency of predictions**: according to XXX's request, the model predicts monthly data. However, this present a big limitation, which is the dataset size. The current model ingest data from January 2010 to September 2023, with approximately 200 rows. This results in a very small dataset, which obstacles a high effective training of the model, and adoption of more powerful machine learning solutions.
 3. **Integrate results from GMK**: As of now, the project includes a web scraper to retrieve information from GMK. However, the current dataset ranges from 2019 to 2023, the lack of prior data makes it unsuitable for data training. Therefore, the news from GMK are currently not used to train the model. Future implementation, may involve adjusting the webscraper to retrieve older information, or replace the missing information with other sources.
